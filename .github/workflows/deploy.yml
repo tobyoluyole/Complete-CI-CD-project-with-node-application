@@ -19,11 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Configure kubectl
-        run: |
-          kubectl config set-cluster codespace
-          kubectl config set-context codespace
-          kubectl config use-context codespace
+      
       - name: Deploy to Kubernetes
         run: |
           kubectl apply -f deployment.yaml
