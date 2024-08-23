@@ -25,6 +25,7 @@ jobs:
           kubectl config set-context codespace
           kubectl config use-context codespace
       - name: Deploy to Kubernetes
-        run: kubectl apply -f deployment.yaml
-             kubectl apply -f service.yaml 
+        run: |
+          kubectl apply -f deployment.yaml
+          kubectl apply -f service.yaml 
             
