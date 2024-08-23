@@ -27,4 +27,6 @@ jobs:
         run: |
           kubectl apply -f deployment.yaml
           kubectl apply -f service.yaml 
+          kubectl apply -f role.yaml
+          kubectl apply -f rolebinding.yaml
             
