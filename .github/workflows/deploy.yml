@@ -19,7 +19,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
+      - name: Start Minikube
+        run: |
+        minikube start
+        minikube status
       - name: Deploy to Kubernetes
         run: |
           kubectl apply -f deployment.yaml
