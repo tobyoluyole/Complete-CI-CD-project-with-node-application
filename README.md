@@ -8,7 +8,7 @@ Then run the following commands
           kubectl apply -f service.yaml 
           kubectl apply -f role.yaml
           kubectl apply -f rolebinding.yaml
-This will start up the application and also add certificate and RBAC security 
+This will start up the application and also add certificate and RBAC security.
 
 To setup monitoring, you must install Prometheus and Grafana using helm. Then create a namespace for monitoring using kubectl create namespace monitoring. 
 
