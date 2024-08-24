@@ -1,7 +1,7 @@
 # Ignore TLS certificates and keys
 *.crt
 *.key
-
+*.csr
 
 # Ignore Kubernetes secret files
 *.secret.yaml
