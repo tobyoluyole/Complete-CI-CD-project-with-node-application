@@ -1,0 +1,12 @@
+# Ignore TLS certificates and keys
+*.crt
+*.key
+
+
+# Ignore Kubernetes secret files
+*.secret.yaml
+*.secret.json
+
+# Ignore the Kubernetes manifest files that may contain sensitive data
+secrets/
+*.secret.*
