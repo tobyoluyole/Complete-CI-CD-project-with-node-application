@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
       - name: my-node-app
-        image: my-app:v1
-        imagePullPolicy: Never
+        image: pracricetobivincent/my-app:v1
+        #imagePullPolicy: Never
         ports:
         - containerPort: 3000
         volumeMounts:
