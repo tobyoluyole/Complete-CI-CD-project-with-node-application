@@ -106,5 +106,6 @@ jobs:
           cd Complete-CI-CD-project-with-node-application || exit 1
           kubectl apply -f deployment.yaml
           kubectl apply -f service.yaml
+          kubectl apply -f ingress.yaml
         EOF
         rm -f /tmp/private_key
