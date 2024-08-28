@@ -104,6 +104,8 @@ jobs:
         chmod 600 /tmp/private_key
         ssh -o StrictHostKeyChecking=no -T -i /tmp/private_key $VM_USER@$VM_HOST << 'EOF'
           cd Complete-CI-CD-project-with-node-application || exit 1
+          kubectl delete deployment --all
+          kubectl delete service --all
           kubectl apply -f deployment.yaml
           kubectl apply -f service.yaml
         EOF
