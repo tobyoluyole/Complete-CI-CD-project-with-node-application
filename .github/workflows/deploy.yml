@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     
     env:
-      DOCKER_IMAGE_NAME: your-dockerhub-username/your-image-name
+      DOCKER_IMAGE_NAME: your-dockerhub-username/node-js-application
       VERSION_FILE: .version
 
     steps:
