@@ -18,11 +18,4 @@ spec:
         #imagePullPolicy: Never
         ports:
         - containerPort: 3000
-        volumeMounts:
-        - name: tls-certificates
-          mountPath: /etc/tls
-          readOnly: true
-      volumes:
-      - name: tls-certificates
-        secret:
-          secretName: my-tls-secret
+    
