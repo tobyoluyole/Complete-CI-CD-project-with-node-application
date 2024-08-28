@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-node-app
-        image: pracricetobivincent/my-app:v1
+        image: pracricetobivincent/node-js-application:latest
         #imagePullPolicy: Never
         ports:
         - containerPort: 3000
