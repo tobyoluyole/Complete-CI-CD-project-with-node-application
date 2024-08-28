@@ -65,9 +65,9 @@ jobs:
     needs: build-and-push
     
     env:
-      VM_USER: your-vm-username
-      VM_HOST: your-vm-ip-or-dns
-      REPO_PATH: /path/to/your/repo
+      VM_USER: azureuser
+      VM_HOST: 172.210.29.31
+      REPO_PATH: https://github.com/tobyoluyole/Complete-CI-CD-project-with-node-application.git
 
     steps:
     - name: SSH into Azure VM and Pull Latest Repo
