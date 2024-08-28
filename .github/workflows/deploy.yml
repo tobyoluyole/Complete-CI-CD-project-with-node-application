@@ -77,8 +77,11 @@ jobs:
        echo "$SSH_PRIVATE_KEY" > /tmp/private_key
         chmod 600 /tmp/private_key
         ssh -o StrictHostKeyChecking=no -T -i /tmp/private_key $VM_USER@$VM_HOST << 'EOF'
-          cd $REPO_PATH
+          cd $REPO_PATH || exit 1
+          if [ ! -d ".git" ]; then
+            echo "Error: Not a git repository."
+            exit 1
+          fi
           git pull origin main
-          # Add any additional commands if needed, e.g., restarting services
         EOF
-        rm /tmp/private_key
+        rm -f /tmp/private_key
