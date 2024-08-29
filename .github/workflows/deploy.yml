@@ -111,7 +111,6 @@ jobs:
           kubectl apply -f role.yaml
           kubectl apply -f rolebinding.yaml
           nohup kubectl port-forward svc/my-node-app-service 4000:80 --address 0.0.0.0 > port-forward.log 2>&1 & 
-          nohup kubectl port-forward svc/my-node-app-service 4000:80 --address 0.0.0.0 > port-forward.log 2>&1 & 
       
         EOF
         
