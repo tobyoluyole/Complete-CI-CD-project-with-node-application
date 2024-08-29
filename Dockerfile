@@ -18,7 +18,7 @@ ENV NODE_ENV=production
 COPY . .
 
 # Expose the port your application will listen on (replace 3000 with your desired port)
-EXPOSE 3000
+EXPOSE 4000
 
 # Define the command to start your application
 CMD ["node", "app.js"]

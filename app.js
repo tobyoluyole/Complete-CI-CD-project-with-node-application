@@ -1,7 +1,7 @@
 const express = require('express');
 
 const app = express();
-const port = 3000;
+const port = 4000;
 
 app.get('/', (req, res) => {
   res.send('Hello everyone, this is a simple application running on port 3000!');
